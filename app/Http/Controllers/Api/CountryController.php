@@ -174,7 +174,7 @@ class CountryController extends Controller
 
                 $response = [
                     'response' => 1,
-                    'message' => 'country reactivated successfully',
+                    'message' => 'country reactivated successfully.',
                     'country' => $country
                 ];
 
@@ -182,7 +182,12 @@ class CountryController extends Controller
             }
         } else {
 
-            return error
+            $response = [
+                'response' => 0,
+                'message' => 'country not found.',
+            ];
+
+            return response()->json($response);
         }
     }
 
