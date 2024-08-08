@@ -160,7 +160,7 @@ class CountryController extends Controller
                 $response = [
                     'response' => 1,
                     'message' => 'country deactivated successfully',
-                    'country' => $country
+                    'country' => $item
                 ];
 
                 return response()->json($response);
@@ -175,7 +175,7 @@ class CountryController extends Controller
                 $response = [
                     'response' => 1,
                     'message' => 'country reactivated successfully.',
-                    'country' => $country
+                    'country' => $item
                 ];
 
                 return response()->json($response);
