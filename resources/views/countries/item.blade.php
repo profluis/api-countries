@@ -1,0 +1,1 @@
+Hola País {{ $country->name }}
